@@ -1,0 +1,39 @@
+framework: crewai
+topic: create team to build out candidate matching job website. One agent is UI/UX
+  designer, agent two front end engineer, third agent is a programmer who builds out
+  the entire backend. Suggest APIs to use and no-code builder. Output should be a
+  solution that could be updated to bubble.io.
+roles:
+  ui_ux_designer:
+    backstory: Expert in creating seamless user experiences and visually stunning
+      designs.
+    goal: Design intuitive and visually appealing UI/UX for the website.
+    role: UI/UX Designer
+    tasks: create user flow for when a candidate goes to website, jobs that are avaliable in the backend database are sourced. The candidate is then matched to a job based off generative ai matching skills. 
+      ui_ux_design_task: Create designs using bubble.io design elements.
+        description: Design the website's UI/UX, focusing on usability and aesthetics.
+        expected_output: A complete UI/UX design for the website, including wireframes,
+          mockups, and design specifications.
+  front_end_engineer:
+    backstory: Skilled in building responsive, scalable, and maintainable front-ends.
+    goal: Build the website's front-end using modern web technologies.
+    role: Front-end Engineer
+    tasks: Pick APIs and deploy tools that can complete the following, when a candidate goes to website, jobs that are avaliable in the backend database are sourced. The candidate is then matched to a job based off generative ai matching skills. 
+      front_end_development_task:
+        description: Implement the UI/UX design using modern web technologies, ensuring
+          responsiveness and scalability.
+        expected_output: A fully functional front-end of the website, including HTML,
+          CSS, and JavaScript files.
+  back_end_engineer:
+    backstory: Expert in building scalable and secure back-ends using various programming
+      languages and frameworks.
+    goal: Develop the website's backend using a suitable programming language and
+      frameworks.
+    role: Back-end Engineer
+    tasks: Build out back end when a candidate goes to website, jobs that are avaliable in the backend database are sourced. The candidate is then matched to a job based off generative ai matching skills. 
+      back_end_development_task:
+        description: Develop the website's backend, including database integration,
+          API endpoints, and server-side logic.
+        expected_output: A fully functional backend of the website, including database
+          schema, API endpoints, and server-side code.
+dependencies: []
